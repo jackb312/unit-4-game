@@ -1,0 +1,21 @@
+body {
+    background: url("../../images/crystal-textured-background-illustration_53876-80624.jpg");
+}
+#totalscore {
+    font-size: 25px;
+}
+#crystalnumber {
+    font-size: 25px;
+}
+#wins {
+    font-size: 25px;
+}
+#losses {
+    font-size: 25px;
+}
+#randomNum {
+    font-size: 25px;
+}
+p {
+    font-size: 14px;
+}

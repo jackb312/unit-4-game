@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector Game</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/core.js"></script>
+    <script type="text/javascript" src="../assets/javascript/game.js/game.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+</head>
+<body>
+    <div class="header text-center">
+        <h1><strong>Crystals Collector!</strong></h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="column instructions">
+                <p><strong>1) You will be given a random number at the start of the game.
+                <br>2) There are four crystals below. By clicking on a crystal you 
+                will add a specific amount of points to your total score.<br>
+                3) You win the game by matching your total score to the random number, 
+                you lose the game if your total score goes above the random number.<br>
+                4) The value of each crystal is hidden from you until you click on it.
+                <br>5) Each time when the game starts, the game will change the values 
+                of each crystal.</strong></p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-6 random number">
+                <div id="randomNum"><strong>###</strong></div>
+            </div>
+            <div class="col-6 text-center wins/losses">
+                <div id="wins"><strong>Wins:###</strong></div>
+                <div id="losses"><strong>Losses:###</strong></div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+                        <img class="crystalimg img-responsive" id="crystal1" src="../assets/images/crystal1.png" alt="Crystal 1" height="150" width="150"/>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+                        <img class="crystalimg img-responsive" id="crystal2" src="../assets/images/crystal2.jpg" alt="Crystal 2" height="150" width="150"/>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+                        <img class="crystalimg img-responsive" id="crystal3" src="../assets/images/crystal3.png" alt="Crystal 3" height="150" width="150"/>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+                        <img class="crystalimg img-responsive" id="crystal4" src="../assets/images/crystal4.svg" alt="Crystal 4" height="150" width="150"/>
+                    </div>
+        </div>
+        <div class="row">
+            <div class="col-6 text-center">
+                <div id="totalscore"><strong>Total Score:###</strong></div>
+            </div>
+            <div class="col-6 text-center">
+                <div id="crystalnumber"><strong>Current Crystal points:###</strong></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
