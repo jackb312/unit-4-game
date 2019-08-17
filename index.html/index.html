@@ -6,8 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/reset.css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/core.js"></script>
-    <script type="text/javascript" src="../assets/javascript/game.js/game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 </head>
 <body>
@@ -28,12 +27,15 @@
             </div>
         </div>
         <div class="row text-center">
-            <div class="col-6 random number">
-                <div id="randomNum"><strong>###</strong></div>
+            <div class="col-4 text-center">
+                <h2 id="guess"><strong>Guess the number: <span id="target" ></span></strong></h2>
             </div>
-            <div class="col-6 text-center wins/losses">
-                <div id="wins"><strong>Wins:###</strong></div>
-                <div id="losses"><strong>Losses:###</strong></div>
+            <div class="col-4 text-center">
+                <h2 id="score"><strong>Total Score: <span id="playerScore" ></span></strong></h2>
+            </div>
+            <div class="col-4 text-center">
+                <h2 id="playerwins"><strong>Wins: <span id="win" ></span>></strong></h2><br>
+                <h2 id="playerloss"><strong>Losses: <span id="loss" ></span>></strong></h2>
             </div>
         </div>
         <div class="row">
@@ -50,14 +52,7 @@
                         <img class="crystalimg img-responsive" id="crystal4" src="../assets/images/crystal4.svg" alt="Crystal 4" height="150" width="150"/>
                     </div>
         </div>
-        <div class="row">
-            <div class="col-6 text-center">
-                <div id="totalscore"><strong>Total Score:###</strong></div>
-            </div>
-            <div class="col-6 text-center">
-                <div id="crystalnumber"><strong>Current Crystal points:###</strong></div>
-            </div>
-        </div>
     </div>
+    <script type="text/javascript" src="../assets/javascript/game.js/game.js"></script>
 </body>
 </html>
